@@ -2,9 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { ReactNode } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BiMailSend } from "react-icons/bi";
 
 const socials: { icon: JSX.Element; path: string }[] = [
-  { icon: <FaGithub />, path: "https://github.com/eric-muganga" },
+  {
+    icon: <FaGithub />,
+    path: "https://github.com/eric-muganga",
+  },
   {
     icon: <FaLinkedinIn />,
     path: "https://www.linkedin.com/in/eric-muganga-6501a3253/",

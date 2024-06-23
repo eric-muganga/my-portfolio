@@ -21,6 +21,8 @@ import {
   SiCsharp,
   SiFramer,
   SiShadcnui,
+  SiMicrosoftsqlserver,
+  SiPostgresql,
 } from "react-icons/si";
 
 const skills: {
@@ -29,42 +31,6 @@ const skills: {
   link: string;
   icon: JSX.Element;
 }[] = [
-  {
-    title: "C#",
-    description: "My superpower",
-    link: "https://docs.microsoft.com/en-us/dotnet/csharp/",
-    icon: <SiCsharp size={40} />,
-  },
-  {
-    title: "ASP.NET Core MVC",
-    description: "Building robust web apps with style",
-    link: "https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0",
-    icon: <SiDotnet size={40} />,
-  },
-  {
-    title: "Entity Framework",
-    description: "Data access made easy",
-    link: "https://docs.microsoft.com/en-us/ef/",
-    icon: <FaDatabase size={40} />,
-  },
-  {
-    title: "WPF",
-    description: "Because who doesn’t love fancy interfaces?",
-    link: "https://docs.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-5.0",
-    icon: <SiDotnet size={40} />,
-  },
-  {
-    title: "MS SQL Server, Postgres",
-    description: "Where all the data magic happens",
-    link: "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15",
-    icon: <FaDatabase size={40} />,
-  },
-  {
-    title: "Git",
-    description: "Version control ninja",
-    link: "https://git-scm.com/doc",
-    icon: <FaGit size={40} />,
-  },
   {
     title: "JavaScript, HTML, CSS",
     description: "The holy trinity of web dev",
@@ -83,6 +49,55 @@ const skills: {
     link: "https://reactjs.org/docs/getting-started.html",
     icon: <FaReact size={40} />,
   },
+  {
+    title: "Next.js",
+    description: "The React Framework for Production",
+    link: "https://nextjs.org/docs",
+    icon: <SiNextdotjs size={40} />,
+  },
+  {
+    title: "TypeScript",
+    description: "Typed JavaScript at Any Scale",
+    link: "https://www.typescriptlang.org/docs/",
+    icon: <SiTypescript size={40} />,
+  },
+  {
+    title: "C#",
+    description: "My superpower",
+    link: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    icon: <SiCsharp size={40} />,
+  },
+  {
+    title: "ASP.NET Core MVC",
+    description: "Building robust web apps with style",
+    link: "https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0",
+    icon: <SiDotnet size={40} />,
+  },
+  {
+    title: "Entity Framework",
+    description: "Data access made easy",
+    link: "https://docs.microsoft.com/en-us/ef/",
+    icon: <FaDatabase size={40} />,
+  },
+
+  {
+    title: "MS SQL Server, Postgres",
+    description: "Where all the data magic happens",
+    link: "https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15",
+    icon: (
+      <>
+        <SiMicrosoftsqlserver size={40} />
+        <SiPostgresql size={40} />
+      </>
+    ),
+  },
+  {
+    title: "Git",
+    description: "Version control ninja",
+    link: "https://git-scm.com/doc",
+    icon: <FaGit size={40} />,
+  },
+
   {
     title: "Node.js",
     description: "JavaScript runtime built on Chrome's V8 engine",
@@ -120,18 +135,7 @@ const skills: {
     link: "https://www.framer.com/motion/",
     icon: <SiFramer size={40} />,
   },
-  {
-    title: "Next.js",
-    description: "The React Framework for Production",
-    link: "https://nextjs.org/docs",
-    icon: <SiNextdotjs size={40} />,
-  },
-  {
-    title: "TypeScript",
-    description: "Typed JavaScript at Any Scale",
-    link: "https://www.typescriptlang.org/docs/",
-    icon: <SiTypescript size={40} />,
-  },
+
   {
     title: "Python",
     description: "The versatile powerhouse",

@@ -25,6 +25,7 @@ export default function Photo() {
             src="/code.png"
             priority
             quality={100}
+            sizes="w-[280px] h-[280px] xl:w-[480px] xl:h-[480px]"
             fill
             alt=""
             className="object-contain"

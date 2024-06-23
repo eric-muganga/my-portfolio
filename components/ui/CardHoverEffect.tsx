@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/utils/cn";
 import {
   AnimatePresence,
@@ -27,54 +28,72 @@ export const HoverEffect = ({
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
+  const { scrollYProgress: blendin } = useScroll({
+    target: targetRef,
+    offset: ["start 0.8", "start 0.2"],
+  });
 
-  const scaleY = useSpring(scrollYProgress);
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   const x = useTransform(scaleY, [0, 1], ["47%", "-47%"]);
 
   return (
-    <section ref={targetRef} id="my-skills" className="relative h-[300vh]">
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden">
-        <h2 className="text-4xl font-bold mb-10">My ToolBox</h2>
-        <motion.div style={{ x }} className={cn("flex gap-4", className)}>
-          {items.map((item, idx) => (
-            <Link
-              href={item?.link}
-              key={item?.link}
-              className="relative group block p-2"
-              onMouseEnter={() => setHoveredIndex(idx)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              <AnimatePresence>
-                {hoveredIndex === idx && (
-                  <motion.span
-                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
-                    layoutId="hoverBackground"
-                    initial={{ opacity: 0 }}
-                    animate={{
-                      opacity: 1,
-                      transition: { duration: 0.15 },
-                    }}
-                    exit={{
-                      opacity: 0,
-                      transition: { duration: 0.15, delay: 0.2 },
-                    }}
-                  />
-                )}
-              </AnimatePresence>
-              <Card>
-                <div className="flex flex-col items-center space-x-2">
-                  <div className="flex gap-1">{item.icon}</div>
+    <AnimatePresence>
+      <motion.section
+        style={{ opacity: blendin }}
+        ref={targetRef}
+        id="my-skills"
+        className="relative h-[300vh]"
+      >
+        <div className="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-10 text-white">
+            My <span className="text-blue-600">ToolBox</span>
+          </h2>
+          <motion.div style={{ x }} className={cn("flex gap-4", className)}>
+            {items.map((item, idx) => (
+              <Link
+                href={item?.link}
+                key={item?.link}
+                target="_blank"
+                className="relative group block p-2"
+                onMouseEnter={() => setHoveredIndex(idx)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
+                <AnimatePresence>
+                  {hoveredIndex === idx && (
+                    <motion.span
+                      className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                      layoutId="hoverBackground"
+                      initial={{ opacity: 0 }}
+                      animate={{
+                        opacity: 1,
+                        transition: { duration: 0.15 },
+                      }}
+                      exit={{
+                        opacity: 0,
+                        transition: { duration: 0.15, delay: 0.2 },
+                      }}
+                    />
+                  )}
+                </AnimatePresence>
+                <Card>
+                  <div className="flex flex-col items-center space-x-2">
+                    <div className="flex gap-1">{item.icon}</div>
 
-                  <CardTitle>{item.title}</CardTitle>
-                </div>
-                <CardDescription>{item.description}</CardDescription>
-              </Card>
-            </Link>
-          ))}
-        </motion.div>
-      </div>
-    </section>
+                    <CardTitle>{item.title}</CardTitle>
+                  </div>
+                  <CardDescription>{item.description}</CardDescription>
+                </Card>
+              </Link>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
+    </AnimatePresence>
   );
 };
 

@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Lora } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./Provider";
-
-const inter = Inter({
-  subsets: ["latin"],
-});
-
-const lora = Lora({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-lora",
-});
 
 const jetBrains_Mono = JetBrains_Mono({
   subsets: ["latin"],
@@ -29,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrains_Mono.className}  ${lora.variable}`}>
+      <body className={`${jetBrains_Mono.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

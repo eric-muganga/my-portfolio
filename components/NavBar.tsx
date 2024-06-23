@@ -103,7 +103,7 @@ export function StickyNavbar() {
   );
 
   return (
-    <nav className="-mx-6 mt-2 inset-x-0 top-0 z-50 w-full">
+    <nav className="sticky mt-0 inset-x-0 top-0 z-50 w-full md:backdrop-blur-lg bg-black bg-opacity-70">
       <div
         className="flex items-center justify-between p-6 lg:px-8 xl:px-12 max-w-full"
         aria-label="Global"
@@ -242,7 +242,7 @@ const MobileNavLink: FC<MobileNavLinkProps> = ({
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-5xl uppercase text-white font-lora hover:underline hover:border-b "
+      className="text-5xl uppercase text-white hover:underline hover:border-b "
     >
       <Link href={href} onClick={handleClick}>
         <motion.span className="z-10 relative hover:border-b-2 hover:border-b-white">
