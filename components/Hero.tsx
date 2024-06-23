@@ -2,8 +2,6 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { Button } from "./ui/button";
 import Socials from "./Socials";
@@ -35,7 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
-              transition: { delay: 1, duration: 0.1, ease: "easeIn" },
+              transition: { delay: 0.5, duration: 0.05, ease: "easeIn" },
             }}
             className="text-center xl:text-left order-2 xl:order-none"
           >
@@ -67,13 +65,6 @@ const Hero = () => {
                 />
               </div>
             </div>
-            {/* <a href="#about">
-              <MagicButton
-                title="About me"
-                icon={<FaLocationArrow />}
-                position="right"
-              />
-            </a> */}
           </motion.div>
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />

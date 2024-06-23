@@ -1,11 +1,25 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Socials from "./Socials";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { motion, useScroll } from "framer-motion";
 
 export default function Footer() {
+  const element = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: element,
+    offset: ["start 0.9", "start 0.2"],
+  });
   return (
-    <footer className="w-full py-20" id="contact">
+    <motion.footer
+      ref={element}
+      style={{
+        opacity: scrollYProgress,
+      }}
+      className="w-full py-20"
+      id="contact"
+    >
       <div className="flex flex-col justify-center items-center m-4">
         <h2 className="text-3xl lg:text-5xl font-bold mb-2 text-white">
           Let&apos;s work <span className="text-blue-600"> together</span>
@@ -45,6 +59,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
