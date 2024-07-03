@@ -162,33 +162,38 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Eric was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eric's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Eric is the ideal partner. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "John Doe",
-    title: "Director of AlphaStream Technologies",
+      "It is my pleasure to recommend Eric Muganga. Eric is an exceptionally talented software engineer with a knack for developing visually appealing and user-friendly web applications. His expertise in JavaScript, React, and Node.js, combined with a creative approach to problem-solving, sets him apart. Over the years, I've seen Eric tackle complex projects with dedication and a collaborative spirit. He's not just a skilled coder but also a great team player who always goes the extra mile. I wholeheartedly endorse Eric for any software development role.",
+    name: "Benito Ishimwe",
+    title: "Azure Cloud Solutions Engineer at LTIMindtree",
+    img: "/benito.jpeg",
   },
   {
     quote:
       "Working with Eric was an incredible experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Eric's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Eric is the ideal partner. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "John Doe",
     title: "Director of AlphaStream Technologies",
+    img: "/eric.jpg",
   },
   {
     quote:
       "Eric's work ethic and creativity are unmatched. Lorem ipsum dolor sit amet, consectetur adipiscing elit. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Eric's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Eric is the ideal partner. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "John Doe",
     title: "Director of AlphaStream Technologies",
+    img: "/eric.jpg",
   },
   {
     quote:
       "I was thoroughly impressed with Eric's skills. Lorem ipsum dolor sit amet, consectetur adipiscing elit. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Eric's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Eric is the ideal partner. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "John Doe",
     title: "Director of AlphaStream Technologies",
+    img: "/eric.jpg",
   },
   {
     quote:
       "Eric exceeded all expectations. Lorem ipsum dolor sit amet, consectetur adipiscing elit. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Eric's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Eric is the ideal partner. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "John Doe",
     title: "Director of AlphaStream Technologies",
+    img: "/eric.jpg",
   },
 ];
 

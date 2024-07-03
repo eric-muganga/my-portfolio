@@ -14,6 +14,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    img: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -87,7 +88,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[70vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-white/[0.3] p-5 md:p-16 md:w-[50vw]"
+            className="w-[70vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-white/[0.3] p-4 md:p-12 md:w-[50vw]"
             style={{
               background: "rgb(0, 0, 0)",
               backgroundColor:
@@ -107,7 +108,7 @@ export const InfiniteMovingCards = ({
                 <span className="flex gap-1">
                   <div className="me-3">
                     <Image
-                      src="/eric.jpg"
+                      src={item.img}
                       alt="profile"
                       width={45}
                       height={45}

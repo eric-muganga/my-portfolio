@@ -6,7 +6,7 @@ const About = () => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["center 0.9", "center center"],
+    offset: ["start 0.9", "start 0.25"],
   });
 
   return (

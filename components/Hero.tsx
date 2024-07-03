@@ -8,6 +8,8 @@ import Socials from "./Socials";
 import Photo from "./Photo";
 import { motion } from "framer-motion";
 
+//import myCV from "./muganga.pdf";
+
 const Hero = () => {
   const wordsAboutMe =
     "I transform cool ideas into visually stunning, user-friendly web experiences that captivate and engage audiences seamlessly.";
@@ -42,7 +44,7 @@ const Hero = () => {
               <span className="text-blue-600">Eric Muganga</span>
             </h1>
             <h3 className="text-xl mb-6 md:text-2xl lg:text-3xl text-white">
-              Junior Software Engineer
+              Junior Software Developer
             </h3>
             <TextGenerateEffect
               className="text-lg max-w-[500px] mb-9"
@@ -50,14 +52,16 @@ const Hero = () => {
             />
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="./muganga.pdf" download>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
