@@ -1,3 +1,26 @@
+# Portfolio
+
+Welcome to my portfolio repository! This project showcases my work and skills using modern web technologies and design principles.
+
+## Technologies and Frameworks
+
+### Next.js
+
+### TypeScript
+
+### React.js
+
+### Tailwind CSS
+
+### Framer Motion
+
+### Vercel
+- Continuous deployment
+- Great integration with Next.js
+
+## Fonts
+### JetBrains Mono
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
