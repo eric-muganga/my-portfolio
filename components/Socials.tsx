@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { ReactNode } from "react";
+
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BiMailSend } from "react-icons/bi";
 
 const socials: { icon: JSX.Element; path: string }[] = [
   {

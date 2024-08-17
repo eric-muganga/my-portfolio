@@ -8,8 +8,6 @@ import { StickyNavbar } from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Testmonials from "@/components/Testmonials";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
   return (
