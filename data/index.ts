@@ -1,3 +1,4 @@
+import { BiLogoTypescript } from "react-icons/bi";
 import {
   FaDatabase,
   FaReact,
@@ -8,6 +9,7 @@ import {
   FaGit,
   FaPython,
 } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
 import {
   SiDotnet,
   SiTailwindcss,
@@ -45,73 +47,17 @@ export const navItems: { title: string; href: string }[] = [
   },
 ];
 
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
-
 export const projects = [
   {
     id: 1,
+    title: "Landing Page for Oneramp.io",
+    des: "This cryptocurrency ramping platform landing page is built using Next.js, Tailwind CSS, and TypeScript. It allows users to seamlessly convert fiat currency into cryptocurrency. Users can sign up, securely link their digital wallets, and begin purchasing crypto instantly. The platform offers real-time market data, user-friendly dashboards, and robust security measures, ensuring a smooth and safe experience for all users.",
+    img: "/OneRamp.png",
+    iconLists: [FaReact, BiLogoTypescript, RiNextjsLine, SiTailwindcss],
+    link: "https://www.oneramp.io",
+  },
+  {
+    id: 2,
     title: "Chat Application",
     des: "This is a real-time chat application built using React, Firebase, and Redux. It allows users to sign up, log in, send and receive messages, and manage their chats.",
     img: "/chat.png",
@@ -127,7 +73,7 @@ export const projects = [
     link: "https://github.com/eric-muganga/SignalShift",
   },
   {
-    id: 2,
+    id: 3,
     title: "AudioAura-Streams",
     des: "AudioAura-Streams is a full-stack web application designed for international radio streaming. Developed using Node.js and React, this platform offers seamless access to global radio broadcasts, enriching your listening experience with diverse audio content from around the world.",
     img: "/AudioAura-Streams.png",
@@ -142,7 +88,7 @@ export const projects = [
     link: "https://audio-aura-streams.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Weather Forecasting Application",
     des: "This weather forecasting application is developed using React.js, React Router, and React Query, ensuring dynamic and efficient UI updates. It integrates Tailwind CSS for responsive and utility-first styling, making the app adaptable and visually appealing across different devices.",
     img: "/weather-app.png",
@@ -150,7 +96,7 @@ export const projects = [
     link: "https://weatherapp-eric-muganga.web.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Contoso-University",
     des: "Contoso-University is a university management system displaying students, departments with the courses in each department, and professors teaching the courses grades for the students. It is an ASP.NET Core MVC with Entity Framework app with CRUD functionality, pagination, and is connected to the database with EF Core migrations feature for managing data model changes and also handles concurrency.",
     img: "/contoso-university.png",
@@ -173,6 +119,13 @@ export const testimonials = [
     name: "Safari Germain",
     title: "Azure AI Engineer at ltimindtree",
     img: "/germain.jpeg",
+  },
+  {
+    quote:
+      "We had the pleasure of working with Eric Muganga on the design and development of our landing page for OneRamp Inc. Eric delivered an outstanding design in Figma that perfectly captured our vision. His attention to detail and creative expertise truly impressed us. Moreover, Eric's ability to bring the design to life through flawless development was exceptional. He completed the project within the agreed timeframe, exceeding our expectations in both quality and efficiency. We highly recommend Eric for any design and development projects.",
+    name: "Elias Hezron",
+    title: "CEO at OneRamp Inc.",
+    img: "/OneRampLogoW.png",
   },
 ];
 

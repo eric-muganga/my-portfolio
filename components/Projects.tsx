@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
 import Link from "next/link";
 import { PinContainer } from "./ui/PinContainer";
@@ -38,7 +37,13 @@ export default function Projects() {
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]">
-                <img src={img} alt={title} className="top-0 rounded-lg" />
+                <Image
+                  src={img}
+                  alt={title}
+                  className="top-0 rounded-lg"
+                  width={700}
+                  height={900}
+                />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
