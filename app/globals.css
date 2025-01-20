@@ -76,15 +76,19 @@ body {
 
 .skills-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns on larger screens */
+  gap: 30px; /* Space between groups */
+  justify-content: center; /* Center horizontally */
+  margin: 40px auto; /* Add auto margin for centering */
+  max-width: 1200px; /* Restrict maximum width for consistency */
 }
 
 .skill-group {
   border: 2px solid #007bff; /* Blue border */
   border-radius: 10px;
   padding: 20px;
+  flex: 1 1 300px; /* Allow flexible growth */
+  text-align: center; /* Center content inside each group */
 }
 
 .skill-category {
@@ -101,15 +105,15 @@ body {
   display: block;
   width: 50px;
   height: 2px;
-  background-color: #007bff;
+  background-color: #ffffff;
   margin: 5px auto;
 }
 
 .skill-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  gap: 15px;
+  justify-items: center; /* Align items horizontally */
 }
 
 .skill-item {
@@ -120,14 +124,14 @@ body {
 }
 
 .skill-item svg {
-  font-size: 40px; /* Increased icon size to 40px */
-  color: #ffff; /* Blue icon color */
+  font-size: 40px; /* Icon size */
+  color: #007bff; /* Blue icon color */
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .skill-item p {
   font-size: 1rem;
-  color: #ffff; /* Black text for skills */
+  color: #ffffff; /* White text for skills */
 }
 
 .skill-item:hover svg {
@@ -139,8 +143,33 @@ body {
   color: #007bff; /* Blue text on hover */
 }
 
+/* Center the bottom row */
+.skills-section:nth-child(2) {
+  grid-column: span 3; /* Center align across all columns */
+  justify-self: center;
+}
+
+/* Small Screen Adjustments */
 @media (max-width: 768px) {
   .skills-section {
-    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    grid-template-columns: 1fr; /* Stack all items vertically */
+    gap: 20px; /* Reduce gap for smaller screens */
+  }
+
+  .skill-group {
+    margin: 10px auto; /* Add spacing between stacked cards */
+    width: 90%; /* Reduce card width for smaller devices */
+  }
+
+  .skill-category {
+    font-size: 1.2rem; /* Slightly smaller text for categories */
+  }
+
+  .skill-item svg {
+    font-size: 35px; /* Adjust icon size for smaller screens */
+  }
+
+  .skill-item p {
+    font-size: 0.9rem; /* Slightly smaller text for skills */
   }
 }
