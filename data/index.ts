@@ -1,14 +1,5 @@
 import { BiLogoTypescript } from "react-icons/bi";
-import {
-  FaDatabase,
-  FaReact,
-  FaNodeJs,
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaGit,
-  FaPython,
-} from "react-icons/fa";
+import { FaDatabase, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
 import {
   SiDotnet,
@@ -26,6 +17,11 @@ import {
   SiReactrouter,
   SiReactquery,
   SiCsharp,
+  SiChartdotjs,
+  SiSpring,
+  SiMysql,
+  SiApachemaven,
+  SiThymeleaf,
 } from "react-icons/si";
 
 export const navItems: { title: string; href: string }[] = [
@@ -50,6 +46,22 @@ export const navItems: { title: string; href: string }[] = [
 export const projects = [
   {
     id: 1,
+    title: "Job Application Tracker",
+    des: "A robust job application tracking system built using .NET Core API, React, and Redux. It features drag-and-drop functionality for a Kanban board, real-time analytics dashboards, and a secure backend with SQL Server. The project optimizes job application management, reducing tracking time by 30%.",
+    img: "/job-tracker.png",
+    iconLists: [SiDotnet, FaReact, SiRedux, SiMicrosoftsqlserver, SiChartdotjs],
+    link: "https://github.com/eric-muganga/JobApplicationTracker",
+  },
+  {
+    id: 2,
+    title: "Online Resource Management System",
+    des: "An innovative Spring Boot MVC application with features like user authentication, session management, and resource search. It integrates MySQL for data persistence and Thymeleaf for a dynamic and responsive user interface. Maven is used for efficient build management.",
+    img: "",
+    iconLists: [SiSpring, FaJava, SiMysql, SiApachemaven, SiThymeleaf],
+    link: "https://github.com/eric-muganga/ResourceManagementSystem",
+  },
+  {
+    id: 3,
     title: "Landing Page for Oneramp.io",
     des: "This cryptocurrency ramping platform landing page is built using Next.js, Tailwind CSS, and TypeScript. It allows users to seamlessly convert fiat currency into cryptocurrency. Users can sign up, securely link their digital wallets, and begin purchasing crypto instantly. The platform offers real-time market data, user-friendly dashboards, and robust security measures, ensuring a smooth and safe experience for all users.",
     img: "/OneRamp.png",
@@ -57,7 +69,7 @@ export const projects = [
     link: "https://www.oneramp.io",
   },
   {
-    id: 2,
+    id: 4,
     title: "Chat Application",
     des: "This is a real-time chat application built using React, Firebase, and Redux. It allows users to sign up, log in, send and receive messages, and manage their chats.",
     img: "/chat.png",
@@ -73,7 +85,7 @@ export const projects = [
     link: "https://github.com/eric-muganga/SignalShift",
   },
   {
-    id: 3,
+    id: 5,
     title: "AudioAura-Streams",
     des: "AudioAura-Streams is a full-stack web application designed for international radio streaming. Developed using Node.js and React, this platform offers seamless access to global radio broadcasts, enriching your listening experience with diverse audio content from around the world.",
     img: "/AudioAura-Streams.png",
@@ -86,14 +98,6 @@ export const projects = [
       SiReactquery,
     ],
     link: "https://audio-aura-streams.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Weather Forecasting Application",
-    des: "This weather forecasting application is developed using React.js, React Router, and React Query, ensuring dynamic and efficient UI updates. It integrates Tailwind CSS for responsive and utility-first styling, making the app adaptable and visually appealing across different devices.",
-    img: "/weather-app.png",
-    iconLists: [SiReactrouter, FaReact, SiTailwindcss, SiRedux, SiReactquery],
-    link: "https://weatherapp-eric-muganga.web.app/",
   },
   {
     id: 5,
