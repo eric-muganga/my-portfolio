@@ -73,3 +73,74 @@ body {
     --ring: 212.7 26.8% 83.9%;
   }
 }
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill-group {
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.skill-category {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff; /* Blue text for category titles */
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.skill-category::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #007bff;
+  margin: 5px auto;
+}
+
+.skill-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-item svg {
+  font-size: 40px; /* Increased icon size to 40px */
+  color: #ffff; /* Blue icon color */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  color: #ffff; /* Black text for skills */
+}
+
+.skill-item:hover svg {
+  transform: scale(1.2); /* Enlarge icon on hover */
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.skill-item:hover p {
+  color: #007bff; /* Blue text on hover */
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+  }
+}
