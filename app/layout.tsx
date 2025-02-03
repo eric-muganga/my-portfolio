@@ -3,6 +3,8 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./Provider";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const jetBrains_Mono = JetBrains_Mono({
   subsets: ["latin"],
 });
@@ -27,6 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
