@@ -4,24 +4,18 @@ import { RiNextjsLine } from "react-icons/ri";
 import {
   SiDotnet,
   SiTailwindcss,
-  SiExpress,
-  SiTypescript,
-  SiNextdotjs,
   SiMui,
-  SiFramer,
-  SiShadcnui,
   SiMicrosoftsqlserver,
-  SiPostgresql,
   SiFirebase,
   SiRedux,
   SiReactrouter,
   SiReactquery,
-  SiCsharp,
   SiChartdotjs,
   SiSpring,
-  SiMysql,
-  SiApachemaven,
-  SiThymeleaf,
+  SiDocker,
+  SiKubernetes,
+  SiApachekafka,
+  SiJsonwebtokens,
 } from "react-icons/si";
 
 export const navItems: { title: string; href: string }[] = [
@@ -46,26 +40,36 @@ export const navItems: { title: string; href: string }[] = [
 export const projects = [
   {
     id: 1,
+    title: "E-Commerce Platform (Microservices)",
+    des: "Designed and implemented a scalable e-commerce platform using Spring Boot microservices, adhering to industry-standard design patterns. Leveraged Docker, Kubernetes, Kafka, and Redis for distributed systems, containerization, and cloud-native solutions, demonstrating modern backend development practices.",
+    iconLists: [
+      SiSpring,
+      FaJava,
+      SiDocker,
+      SiKubernetes,
+      SiApachekafka,
+      SiJsonwebtokens,
+    ], // Example icons
+    type: "backend",
+    link: "https://github.com/eric-muganga/ecommerce-microservices",
+  },
+  {
+    id: 2,
     title: "Job Application Tracker",
     des: "A robust job application tracking system built using .NET Core API, React, and Redux. It features drag-and-drop functionality for a Kanban board, real-time analytics dashboards, and a secure backend with SQL Server. The project optimizes job application management, reducing tracking time by 30%.",
     img: "/job-tracker.png",
     iconLists: [SiDotnet, FaReact, SiRedux, SiMicrosoftsqlserver, SiChartdotjs],
-    link: "https://github.com/eric-muganga/JobApplicationTracker",
+    type: "fullstack",
+    link: "https://github.com/eric-muganga/jobApplicationTrackerApi",
   },
-  {
-    id: 2,
-    title: "Online Resource Management System",
-    des: "An innovative Spring Boot MVC application with features like user authentication, session management, and resource search. It integrates MySQL for data persistence and Thymeleaf for a dynamic and responsive user interface. Maven is used for efficient build management.",
-    img: "",
-    iconLists: [SiSpring, FaJava, SiMysql, SiApachemaven, SiThymeleaf],
-    link: "https://github.com/eric-muganga/ResourceManagementSystem",
-  },
+
   {
     id: 3,
     title: "Landing Page for Oneramp.io",
     des: "This cryptocurrency ramping platform landing page is built using Next.js, Tailwind CSS, and TypeScript. It allows users to seamlessly convert fiat currency into cryptocurrency. Users can sign up, securely link their digital wallets, and begin purchasing crypto instantly. The platform offers real-time market data, user-friendly dashboards, and robust security measures, ensuring a smooth and safe experience for all users.",
     img: "/OneRamp.png",
     iconLists: [FaReact, BiLogoTypescript, RiNextjsLine, SiTailwindcss],
+    type: "fullstack",
     link: "https://www.oneramp.io",
   },
   {
@@ -82,6 +86,7 @@ export const projects = [
       SiTailwindcss,
       SiMui,
     ],
+    type: "fullstack",
     link: "https://github.com/eric-muganga/SignalShift",
   },
   {
@@ -97,15 +102,8 @@ export const projects = [
       SiReactrouter,
       SiReactquery,
     ],
+    type: "fullstack",
     link: "https://audio-aura-streams.vercel.app",
-  },
-  {
-    id: 5,
-    title: "Contoso-University",
-    des: "Contoso-University is a university management system displaying students, departments with the courses in each department, and professors teaching the courses grades for the students. It is an ASP.NET Core MVC with Entity Framework app with CRUD functionality, pagination, and is connected to the database with EF Core migrations feature for managing data model changes and also handles concurrency.",
-    img: "/contoso-university.png",
-    iconLists: [SiDotnet, SiCsharp, SiMicrosoftsqlserver],
-    link: "https://github.com/eric-muganga/Contoso-University",
   },
 ];
 
@@ -136,6 +134,36 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
+    title: "Software Engineer Intern · Cashfro",
+    period: "Mar 2025 - Present",
+    desc: "Contributed to the development of Cashfro, an innovative FinTech platform, focusing on backend service implementation and API development using Java and Spring Boot. Participated in designing scalable solutions, integrating secure payment gateways, and ensuring robust data management within a dynamic startup environment.",
+    className: "md:col-span-2",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "PostgreSQL",
+      "Git",
+      "Docker",
+    ],
+  },
+  {
+    id: 2,
+    title: "Freelance Fullstack Developer · Oneramp.io",
+    period: "Jun 2024 - Sep 2024",
+    desc: "Led the development of a comprehensive cryptocurrency ramping platform for Oneramp.io as a freelance fullstack developer. Implemented seamless fiat-to-crypto conversion features, secure digital wallet integrations, and real-time market data. Utilized Next.js, React, and TypeScript to build a user-friendly and highly secure web application.",
+    className: "md:col-span-2",
+    technologies: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git",
+    ],
+  },
+  {
+    id: 3,
     title: "Frontend Engineer Intern · Nugsoft Technologies",
     period: "Jun - Sept 2022",
     desc: "Assisted in developing a web-based platform using React.js, focusing on enhancing interactivity and implementing responsive, visually appealing user interfaces with HTML5, CSS3, and JavaScript. Collaborated with design teams to translate mockups into dynamic web pages, ensuring an intuitive user experience. Utilized version control systems like Git for collaborative coding and efficient codebase management.",
