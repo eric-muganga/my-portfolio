@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="flex mt-2 md:flex-row flex-col justify-between items-center gap-2 md:gap-12">
           <p className="md:text-base text-sm md:font-normal font-light">
-            Copyright &copy; 2024 Eric Muganga
+            Copyright &copy; 2025 Eric Muganga
           </p>
           <div className="mb-8 xl:mb-0">
             <Socials
