@@ -22,7 +22,7 @@ export default function Photo() {
           className="w-[280px] h-[280px] xl:w-[480px] xl:h-[480px] mix-blend-lighten"
         >
           <Image
-            src="/code.png"
+            src="/hero.jpeg"
             priority
             quality={100}
             sizes="w-[280px] h-[280px] xl:w-[480px] xl:h-[480px]"

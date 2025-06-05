@@ -13,7 +13,7 @@ const About = () => {
     <motion.section
       ref={element}
       style={{ opacity: scrollYProgress }}
-      className="py-20 h-full mt-24"
+      className="py-20 h-full mt-24 mb-24"
       id="about"
     >
       <div className="container relative mx-auto">
@@ -26,20 +26,30 @@ const About = () => {
             </div>
             <div>
               <p className="text-md md:text-xl text-gray-300 mb-4">
-                I&apos;m a enthusiastic computer science student on a mission to
-                rock the world of software development, one line of code at a
-                time. With over three years of coding experience, I juggle
-                classes, projects.
+                I am a dedicated Computer Science student with over 4 years of
+                hands-on experience in software development. My passion lies in
+                crafting robust, efficient, and scalable solutions, primarily
+                focusing on backend technologies like Java and Spring Boot. I am
+                adept at transforming complex challenges into clean,
+                maintainable code.
               </p>
-              <p className="text-lg text-gray-300 mb-4">
-                My brain is a quirky mix of creativity and logic, which means I
-                can whip up high-quality code while simultaneously dreaming up
-                the next big thing. Group projects? Bring it on! I&apos;m a team
-                player who believes in the power of collaboration and the magic
-                of great ideas.
+              <p className="text-md md:text-xl text-gray-300 mb-4">
+                {" "}
+                {/* Changed to md:text-xl for consistency */}
+                My approach combines strong logical reasoning with a creative
+                problem-solving mindset. I thrive in collaborative environments,
+                consistently applying agile methodologies and clean code
+                principles to deliver high-quality results. I am a committed
+                team player who values effective communication and believes in
+                the power of shared knowledge to achieve project success.
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
-                Let&apos;s connect and create something awesome together!
+              <p className="text-md md:text-xl text-gray-700 dark:text-gray-300">
+                {" "}
+                {/* Changed to md:text-xl for consistency */}I am always eager
+                to learn new technologies, embrace best practices, and
+                contribute to impactful projects. I look forward to connecting
+                and exploring opportunities to create innovative solutions
+                together.
               </p>
             </div>
           </div>

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const wordsAboutMe =
-    "I transform cool ideas into visually stunning, user-friendly web experiences that captivate and engage audiences seamlessly.";
+    "I transform innovative concepts into impactful, user-centric web applications, focusing on both robust functionality and seamless user experience.";
   return (
     <section className="h-full z-10">
       <div>
@@ -44,7 +44,7 @@ const Hero = () => {
               <span className="text-blue-600">Eric Muganga</span>
             </h1>
             <h3 className="text-xl mb-6 md:text-2xl lg:text-3xl text-white">
-              Junior Software Developer
+              Software Engineer
             </h3>
             <TextGenerateEffect
               className="text-lg max-w-[500px] mb-9"
@@ -52,7 +52,7 @@ const Hero = () => {
             />
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="./muganga.pdf" download>
+              <a href="./eric-muganga.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
