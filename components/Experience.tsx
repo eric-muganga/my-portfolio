@@ -23,7 +23,7 @@ export default function Experience() {
           My work <span className="text-blue-600">Experience</span>
         </h2>
       </div>
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center">
         {workExperience.map(
           ({ id, title, period, desc, className, technologies }) => (
             <div key={id} className="w-[80vw] md:w-[50vw] m-4 p-4  rounded-xl">
