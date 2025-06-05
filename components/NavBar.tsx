@@ -103,7 +103,7 @@ export function StickyNavbar() {
   );
 
   return (
-    <nav className="sticky mt-0 inset-x-0 top-0 z-50 w-full md:backdrop-blur-lg bg-black bg-opacity-70">
+    <nav className="sticky mt-0 inset-x-0 top-0 z-50 w-full md:backdrop-blur-lg bg-black bg-opacity-70 border-b border-white/20">
       <div
         className="flex items-center justify-between p-6 lg:px-8 xl:px-12 max-w-full"
         aria-label="Global"
