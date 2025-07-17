@@ -25,10 +25,11 @@ export default function Photo() {
             src="/hero.jpeg"
             priority
             quality={100}
-            sizes="w-[280px] h-[280px] xl:w-[480px] xl:h-[480px]"
+            sizes="(max-width: 1280px) 280px, 480px"
             fill
-            alt=""
+            alt="Eric Muganga - Software Engineer, professional headshot showing a confident software developer"
             className="object-contain"
+            itemProp="image"
           />
         </motion.div>
       </motion.div>

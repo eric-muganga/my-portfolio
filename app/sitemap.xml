@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app//</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://eric-muganga-portfolio.vercel.app/eric.jpg</image:loc>
+      <image:title>Eric Muganga - Software Engineer</image:title>
+      <image:caption>Eric Muganga, Senior Full-Stack Software Engineer</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Section -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/#blog</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Individual Blog Posts -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/blog/1</loc>
+    <lastmod>2025-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://eric-muganga-portfolio.vercel.app/microservices.jpg</image:loc>
+      <image:title>Microservices Data Consistency</image:title>
+      <image:caption>Exploring microservices data consistency with Apache Kafka</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/blog/2</loc>
+    <lastmod>2024-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://eric-muganga-portfolio.vercel.app/microservices.jpg</image:loc>
+      <image:title>Building Scalable Microservices with Spring Boot</image:title>
+      <image:caption>Complete guide to microservices architecture</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/blog/3</loc>
+    <lastmod>2024-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://eric-muganga-portfolio.vercel.app/chat.png</image:loc>
+      <image:title>React Performance Optimization</image:title>
+      <image:caption>Advanced React optimization techniques</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/#about</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Skills Section -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/#my-skills</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Projects Section -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/#projects</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://eric-muganga-portfolio.vercel.app/#contact</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset> 
