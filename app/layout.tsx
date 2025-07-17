@@ -11,7 +11,7 @@ const jetBrains_Mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Eric Muganga - Senior Full-Stack Developer & Software Engineer",
+    default: "Eric Muganga - Full-Stack Developer & Software Engineer",
     template: "%s | Eric Muganga - Software Engineer",
   },
   description:
