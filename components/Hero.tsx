@@ -110,7 +110,7 @@ const Hero = () => {
                   aria-label="Contact actions"
               >
                 <a
-                    href="/eric_muganga.pdf" // Updated path
+                    href="/Eric_Muganga_Resume.pdf" // Updated path
                     download="Eric-Muganga-Backend-Engineer-Resume.pdf"
                     aria-label="Download Eric Muganga's backend engineer resume as PDF"
                     itemProp="url"
