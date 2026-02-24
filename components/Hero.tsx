@@ -111,7 +111,7 @@ const Hero = () => {
               >
                 <a
                     href="/Eric_Muganga_Resume.pdf" // Updated path
-                    download="Eric-Muganga-Backend-Engineer-Resume.pdf"
+                    download="Eric_Muganga_Resume.pdf"
                     aria-label="Download Eric Muganga's backend engineer resume as PDF"
                     itemProp="url"
                 >
